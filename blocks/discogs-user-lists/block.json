@@ -1,0 +1,36 @@
+{
+	"apiVersion": 3,
+	"name": "blocks-for-discogs/discogs-user-lists",
+	"title": "Discogs User Lists",
+	"description": "Display a user's lists as stacked listing",
+	"keywords": ["discogs","user","collection","wantlist","list"],
+	"category": "blocks-for-discogs",
+	"icon": {
+		"background": "#333333", 
+		"foreground": "#ffffff",
+		"src": "album"
+	},
+	"supports": {
+		"html": false,
+		"anchor": true,
+		"align": ["wide","full"],
+		"spacing": {
+			"margin": true,
+			"padding": true
+		}
+	},
+    "attributes": {
+		"blockID": { "type": "string", "default": "" },
+		"display_list_image": { "type": "boolean", "default": true },
+		"display_list_title": { "type": "boolean", "default": true },
+		"display_list_description": { "type": "boolean", "default": true },
+		"display_list_date_added": { "type": "boolean", "default": true },
+		"display_list_date_changed": { "type": "boolean", "default": true },
+		"username": { "type": "string", "default": "" }
+     },
+	"editorScript": "file:./index.js",
+	"style": "file:./frontend.css",
+	"viewScript": "file:./frontend.js",
+	"render": "file:./render.php"
+}
+

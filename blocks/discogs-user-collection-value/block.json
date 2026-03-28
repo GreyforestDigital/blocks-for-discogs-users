@@ -1,0 +1,37 @@
+{
+	"apiVersion": 3,
+	"name": "blocks-for-discogs/discogs-user-collection-value",
+	"title": "Discogs User Collection Value",
+	"description": "Display a user collection's value as grid or list",
+	"keywords": ["discogs","user","collection","wantlist"],
+	"category": "blocks-for-discogs",
+	"icon": {
+		"background": "#333333", 
+		"foreground": "#ffffff",
+		"src": "album"
+	},
+	"supports": {
+		"html": false,
+		"anchor": true,
+		"align": ["wide","full"],
+		"spacing": {
+			"margin": true,
+			"padding": true
+		}
+	},
+    "attributes": {
+		"blockID": { "type": "string", "default": "" },
+		"username": { "type": "string", "default": "" },
+		"layout_style": { "type": "string", "default": "cards" },
+		"display_collection_count": { "type": "boolean", "default": true },
+		"display_collection_maximum": { "type": "boolean", "default": true },
+		"display_collection_median": { "type": "boolean", "default": true },
+		"display_collection_minimum": { "type": "boolean", "default": true },
+		"display_section_title": { "type": "boolean", "default": true }
+     },
+	"editorScript": "file:./index.js",
+	"style": "file:./frontend.css",
+	"viewScript": "file:./frontend.js",
+	"render": "file:./render.php"
+}
+

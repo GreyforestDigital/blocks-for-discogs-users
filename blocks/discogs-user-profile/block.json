@@ -1,0 +1,51 @@
+{
+	"apiVersion": 3,
+	"name": "blocks-for-discogs/discogs-user-profile",
+	"title": "Discogs User Profile",
+	"description": "Display a user profile",
+	"keywords": ["discogs","user","profile"],
+	"category": "blocks-for-discogs",
+	"icon": {
+		"background": "#333333", 
+		"foreground": "#ffffff",
+		"src": "album"
+	},
+	"supports": {
+		"html": false,
+		"anchor": true,
+		"align": ["wide","full"],
+		"spacing": {
+			"margin": true,
+			"padding": true
+		}
+	},
+    "attributes": {
+		"blockID": { "type": "string", "default": "" },
+		"profile_banner_aspectRatioHeight": { "type": "string", "default": "1" },
+		"profile_banner_aspectRatioWidth": { "type": "string", "default": "4" },
+		"profile_banner_background_color": { "type": "string", "default": "#171717" },
+		"profile_discogs_logo_color": { "type": "string", "default": "#171717" },
+		"profile_link_background_color": { "type": "string", "default": "#171717" },
+		"display_profile_avatar": { "type": "boolean", "default": true },
+		"display_profile_banner": { "type": "boolean", "default": true },
+		"display_profile_collection_value": { "type": "boolean", "default": false },
+		"display_profile_link": { "type": "boolean", "default": true },
+		"display_profile_location": { "type": "boolean", "default": true },
+		"display_profile_name_or_username": { "type": "string", "default": "username" },
+		"display_profile_num_collection": { "type": "boolean", "default": true },
+		"display_profile_num_for_sale": { "type": "boolean", "default": true },
+		"display_profile_num_wantlist": { "type": "boolean", "default": true },
+		"display_profile_releases_contributed": { "type": "boolean", "default": true },
+		"display_profile_releases_rated": { "type": "boolean", "default": true },
+		"display_profile_registration_date": { "type": "boolean", "default": true },
+		"display_profile_text": { "type": "boolean", "default": true },
+		"display_profile_title": { "type": "boolean", "default": true },
+		"profile_wrap_border": { "type": "object",  "default": { "color":"", "style":"", "width":"", "radius":"" } },
+		"username": { "type": "string", "default": "" }
+     },
+	"editorScript": "file:./index.js",
+	"style": "file:./frontend.css",
+	"viewScript": "file:./frontend.js",
+	"render": "file:./render.php"
+}
+

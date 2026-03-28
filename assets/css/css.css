@@ -1,0 +1,15 @@
+.discogs-block-message * {box-sizing:border-box;}
+.discogs-block-message {box-sizing:border-box;color:#000;height:auto;padding:15px 15px 20px 15px;width:100%;border:1px solid #ccc;display:block;text-align:center;align-items:center;justify-content:center;}
+.discogs-block-message span {font-size:15px !important;padding:0;margin:0;display:block;}
+.discogs-block-message svg {height:40px;width:auto;display:block;margin:5px auto;}
+.discogs-block-message svg path {fill: #000;}
+.discogs-block-message.discogs-block-error {border-color:red;color:red;}
+.discogs-block-message.discogs-block-error svg path {fill:red;}
+
+.gf-blocks-for-discogs {box-sizing:border-box;}
+
+.discogs-label {display:block;font-size:11px;line-height:1.4;margin:0 0 8px 0;text-transform:uppercase;}
+
+.gf-settings-header {display:flex;justify-content:space-between;align-content:center;}
+.gf-settings-header form {display:flex;justify-content:flex-end;align-items:center;}
+.gf-table-wrapper {max-height:40vh;overflow-y:auto;}

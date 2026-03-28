@@ -1,0 +1,38 @@
+/* GLOBAL */
+.discogs-user-profile * {margin:0;padding:0;position:relative;box-sizing:border-box;}
+.discogs-user-profile > h2 {margin:0 auto .5em auto;display:block;}
+.is-root-container .discogs-user-profile a {pointer-events:none;}
+
+/* PROFILE */
+.discogs-user-profile .discogs-profile-wrap {position:relative;border:1px solid #ccc;}
+.discogs-user-profile .discogs-profile-banner {display:block;background:#fed456;aspect-ratio:3 / 1;}
+.discogs-user-profile .discogs-profile-banner img {display:block;height:100%;width:100%;object-fit:cover;}
+.discogs-user-profile .discogs-profile-avatar {display:block;height:100px;width:100px;margin:20px auto 0 auto;border-radius:100%;border:3px solid #000;z-index:10;position:relative;overflow:hidden;transform:scale(1);transition:.35s ease;}
+.discogs-user-profile .discogs-profile-wrap.discogs-banner-visible .discogs-profile-avatar {margin-top:-50px;}
+.discogs-user-profile .discogs-profile-avatar:hover {cursor:pointer;transform:scale(1.05) rotate(2deg);transition:.35s ease;}
+.discogs-user-profile .discogs-profile-avatar img {display:block;height:100px;width:100px;border-radius:100%;margin:-3px;padding:0;border:0;}
+.discogs-user-profile .discogs-profile-title h2 {display:block;text-align:center;padding:.5em .5em .1em .5em;margin:0;color:inherit;}
+.discogs-user-profile .discogs-profile-registration small {display:block;text-align:center;padding:0;margin:0;}
+.discogs-user-profile .discogs-inventory-link a,
+.discogs-user-profile .discogs-profile-link a {font-size:.8em;display:inline-block;padding:.5em 1em;margin:.5em 5px .5em 0;text-align:center;background:#111;color:#fff;text-decoration:none;}
+.discogs-user-profile .discogs-inventory-link a:hover,
+.discogs-user-profile .discogs-profile-link a:hover {opacity:0.9;text-decoration:underline;}
+.discogs-user-profile .discogs-profile-location P {display:block;padding:.5em .5em 0 .5em;text-align:center;margin:0;font-size:.7em;}
+.discogs-user-profile .discogs-profile-text P {display:block;padding:0 10px 10px 10px;text-align:justify;margin:0;font-size:.8em;color:inherit;}
+.discogs-user-profile .discogs-profile-stats {display:flex;justify-content:space-evenly;flex-wrap:wrap;margin:20px;}
+.discogs-user-profile .discogs-profile-stats P {display:block;padding:.5em .5em 0 .5em;text-align:center;margin:0;color:inherit;font-weight:bold;text-transform:uppercase;font-size:.7em;}
+.discogs-user-profile .discogs-profile-stats small {display:block;padding:0 .5em;text-align:center;font-size:.8em;color:inherit;}
+.discogs-user-profile .discogs-profile-content {padding:0 20px;margin:0;}
+.discogs-user-profile .discogs-profile-footer {display:flex;justify-content:center;flex-flow:wrap;margin:0;padding:10px 20px 20px 20px;}
+
+/* COLLECTION VALUE */
+.discogs-user-profile ul.discogs-collection-values {display:flex;justify-content:space-around;flex-flow:wrap row;align-items:center;padding:0 1em;border:1px solid #ccc;margin:2em 0 0 0;}
+.discogs-user-profile ul.discogs-collection-values li {text-align:center;padding:1em;list-style:none;min-width:100px;}
+.discogs-user-profile ul.discogs-collection-values li p {padding:0;margin:0;font-weight:bold;font-size:1em;}
+.discogs-user-profile ul.discogs-collection-values li small {text-transform:uppercase;font-size:.7em;}
+
+
+@media only screen and (max-width : 768px) {
+.discogs-user-profile ul.discogs-collection-values {display:block;text-align:center;}
+.discogs-user-profile ul.discogs-collection-values li {padding:.5em;}
+}

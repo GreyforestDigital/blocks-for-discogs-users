@@ -1,0 +1,46 @@
+{
+	"apiVersion": 3,
+	"name": "blocks-for-discogs/discogs-user-collection",
+	"title": "Discogs User Collection",
+	"description": "Display a user collection as grid or list",
+	"keywords": ["discogs","user","collection","wantlist"],
+	"category": "blocks-for-discogs",
+	"icon": {
+		"background": "#333333", 
+		"foreground": "#ffffff",
+		"src": "album"
+	},
+	"supports": {
+		"html": false,
+		"anchor": true,
+		"align": ["wide","full"],
+		"spacing": {
+			"margin": true,
+			"padding": true
+		}
+	},
+    "attributes": {
+		"blockID": { "type": "string", "default": "" },
+		"display_pagination": { "type": "boolean", "default": true },
+		"display_release_artist": { "type": "boolean", "default": true },
+		"display_release_format": { "type": "boolean", "default": true },
+		"display_release_genres": { "type": "boolean", "default": true },
+		"display_release_image": { "type": "boolean", "default": true },
+		"display_release_labels": { "type": "boolean", "default": true },
+		"display_release_styles": { "type": "boolean", "default": true },
+		"display_release_title": { "type": "boolean", "default": true },
+		"display_release_year": { "type": "boolean", "default": true },
+		"display_section_title": { "type": "boolean", "default": true },
+		"layout_columns": { "type": "number", "default": 3 },
+		"layout_style": { "type": "string", "default": "cards" },
+		"sorting_allow_user_sort": { "type": "boolean", "default": true },
+		"sorting_per_page": { "type": "string", "default": "50" },		
+		"sorting_sort": { "type": "string", "default": "added" },
+		"sorting_sort_order": { "type": "string", "default": "asc" },		
+		"username": { "type": "string", "default": "" }
+     },
+	"editorScript": "file:./index.js",
+	"style": "file:./frontend.css",
+	"viewScript": "file:./frontend.js",
+	"render": "file:./render.php"
+}

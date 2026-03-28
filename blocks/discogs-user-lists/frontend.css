@@ -1,0 +1,18 @@
+/* GLOBAL */
+.discogs-user-lists * {margin:0;padding:0;position:relative;box-sizing:border-box;color:inherit;}
+.discogs-user-lists > h2 {margin:0 auto .5em auto;display:block;}
+.discogs-user-lists li {list-style:none;}
+.discogs-user-lists p {margin:0 auto 1em auto;padding:0;display:block;}
+.discogs-user-lists .discogs-release-titles p {margin:0;}
+.is-root-container .discogs-user-lists a {pointer-events:none;}
+
+/* LIST OF LISTS */
+.discogs-user-lists ul li {display:grid;grid-template-columns:100px 1fr;margin:0 0 1rem 0;list-style:none;padding:0;grid-gap:1rem;}
+.discogs-user-lists ul li.no-image {grid-template-columns:1fr;}
+.discogs-user-lists ul li .discogs-list-image a {display:block;aspect-ratio:1/1;}
+.discogs-user-lists ul li .discogs-list-image img {height:100%;width:100%;object-fit:cover;}
+
+.discogs-user-lists ul li .discogs-list-information h3 {margin:0 0 .5em 0;}
+.discogs-user-lists ul li .discogs-list-information p {margin:0 0 .5em 0;}
+.discogs-user-lists ul li .discogs-list-information p span {margin:0 .5em 0 0;font-size:.7em;text-transform:uppercase;font-weight:bold;}
+.discogs-user-lists ul li .discogs-list-information small {margin:0 0 .5em 0;display:block;}
