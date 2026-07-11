@@ -6,8 +6,8 @@ Contributors: GreyforestDigital
 Donate link: https://www.greyforest.digital/donate
 Tags: discogs, api, collection, inventory, vinyl
 Requires at least: 6.0
-Tested up to: 6.9
-Stable tag: 1.0.1
+Tested up to: 7.0
+Stable tag: 1.0.2
 Requires PHP: 8.0
 License: GPLv2 or later
 License URI: https://www.gnu.org/licenses/gpl-2.0.html
@@ -123,8 +123,11 @@ For general inquiries, you can also reach out at [https://www.greyforest.digital
 
 == Changelog ==
 
-= 1.0.1 -> March 19, 2026 =
+= 1.0.2 -> July 10th, 2026 =
+* Compatibility check for WordPress 7.0.0 + 7.0.1
+
+= 1.0.1 -> March 19th, 2026 =
 * Fixed admin-ajax.php unauthorized user bug caused by current_user_can() function placement in logging admin_init() action
 
 = 1.0.0 -> January 16th, 2026 =
-* Initial commit to repository.
+* Initial commit to repository
