@@ -5,10 +5,10 @@ Plugin URI: https://www.greyforest.digital/plugins/blocks-for-discogs-users
 Description: Gutenberg blocks for Discogs Users to embed collections, wantlists, profiles, collection values, and custom lists with tons of customization options.
 Author: Greyforest
 Author URI: https://www.greyforest.digital
-Version: 1.0.2
+Version: 1.0.3
 Requires at least: 6.0
 Requires PHP: 8.0
-Tested up to: 7.0
+Tested up to: 7.1
 Text Domain: blocks-for-discogs-users
 License: GPLv2 or later
 License URI: https://www.gnu.org/licenses/gpl-2.0.html
@@ -20,7 +20,7 @@ License URI: https://www.gnu.org/licenses/gpl-2.0.html
 
 if (!defined('ABSPATH')) { return; }
 
-define('GF_BLOCKS_FOR_DISCOGS_USERS_PLUGIN_VERSION','1.0.2');
+define('GF_BLOCKS_FOR_DISCOGS_USERS_PLUGIN_VERSION','1.0.3');
 define('GF_BLOCKS_FOR_DISCOGS_USERS_PLUGIN_URL',substr( plugin_dir_url( __FILE__ ), 0, -1 ) );
 define('GF_BLOCKS_FOR_DISCOGS_USERS_PLUGIN_PATH',dirname( __FILE__ ));
 define('GF_BLOCKS_FOR_DISCOGS_USERS_PLUGIN_BASENAME',plugin_basename(__FILE__));
